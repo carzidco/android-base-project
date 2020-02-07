@@ -1,0 +1,71 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.61'
+    ext {
+        project_version = "0.0.22"
+
+        ktx = "2.2.0"
+        roomktx = "2.2.3"
+        androidx_version = '1.0.0-alpha02'
+        legacy_support = '1.0.0-alpha02'
+        material_version = '1.1.0'
+        preference_version = '1.0.0'
+        camerax_version = '1.0.0-alpha09'
+        //material_version = '1.1.0-alpha06'
+        supportLibraryVersion = '28.0.0'
+        lifecycle_version = '2.2.0'
+        lifecycle_kapt_version = '2.0.0'
+        gradle_version = '3.1.1'
+        dagger_version = '2.16'
+        constraint_layout_version = '1.1.3'
+        okhttp_logging_interceptor_version = '3.8.1'
+        okhttp_version = '3.8.0'
+        retrofit_version = '2.3.0'
+        junit_version = '4.12'
+        rxjava2 = '2.1.9'
+        rx2_android = '2.1.0'
+        rx2_kotlin = '2.2.0'
+        arch_comp = '1.1.1'
+        compiler_version = '3.3.2'
+        ktx_version = '0.3'
+        rx_relay_version = '2.1.0'
+        room_version = "2.1.0"
+        facebook_version = '5.13.0'
+
+        hamcrest_version = '1.3'
+        junit_version = '4.13-beta-3'
+        mockito_version = '2.7.9'
+        spectrum_version = '1.2.0'
+        kluent_version = '1.28'
+        glide_version = '4.9.0'
+        apache_commons_io_version = '2.4'
+    }
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://jitpack.io' }
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.0-rc02'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
